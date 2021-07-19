@@ -1,0 +1,67 @@
+﻿@page "/livros"
+
+@using Theos.BlazorApp.Data
+@inject LivrosService LivroServices
+@inject NavigationManager NavigationManager
+
+<h1>Livraria</h1>
+
+<p>Seja bem vindo a Livraria Theos Magazine.</p>
+
+<p>
+    <button class="btn btn-success" @onclick="CadastrarLivros">Cadastrar</button>
+
+</p>
+
+@if (livraria == null)
+{
+    <p><em>Carregando...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Data</th>
+                <th>Descricao</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var livro in livraria)
+            {
+            <tr>
+
+                <td>@livro.Id</td>
+                <td>@livro.Nome</td>
+                <td>@livro.Data.ToShortDateString()</td>
+                <td>@livro.Descricao</td>
+                <td>@livro.Valor</td>
+          
+                <td>
+                    <a href='/EdtLivro/@livro.Id'  class="btn btn-warning">Editar</a>
+                </td>
+                <td>
+                    <a href='/DelLivro/@livro.Id'  class="btn btn-danger">Excluir</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Theos.Models.Livro> livraria;
+
+    protected override async Task OnInitializedAsync()
+    {
+        livraria = await LivroServices.GetLivroAsync();
+    }
+
+    protected async Task CadastrarLivros()
+    {
+        NavigationManager.NavigateTo("AddLivro");
+    }
+}

@@ -1,0 +1,69 @@
+﻿@page "/edtlivro/{id:int}"
+
+@inject NavigationManager NavigationManager
+@using Theos.BlazorApp.Data
+@inject LivrosService LivroServices
+
+<h2>Criar Livro</h2>
+<hr />
+
+<EditForm Model="@Livro" OnValidSubmit="EditarLivro">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <label for="Nome" class="control-label">Nome</label>
+                <InputText @bind-Value="@Livro.Nome" class="form-control" />
+                @*<ValidationMessage For="@(()=> Livro.Nome)" />*@
+            </div>
+            <div class="form-group">
+                <label for="Descricao" class="control-label">Descricao</label>
+                <InputText @bind-Value="@Livro.Descricao" class="form-control" />
+                @* <ValidationMessage For="@(()=> Livro.Descricao)" />*@
+            </div>
+            <div class="form-group">
+                <label for="Valor" class="control-label">Valor</label>
+                <InputNumber @bind-Value="@Livro.Valor" class="form-control" />
+                @*<ValidationMessage For="@(()=> Livro.Valor)" />*@
+            </div>
+
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Editar" />
+                <input type="button" class="btn" @onclick="@Cancel" value="Cancelar" />
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    Theos.Models.Livro Livro = new Theos.Models.Livro();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Livro =  await LivroServices.GetByIdLivroAsync(id);
+    }
+
+    protected async Task EditarLivro()
+    {
+
+        LivroServices.PutLivroAsync(Livro , id);
+        NavigationManager.NavigateTo("Livros");
+    }
+
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("Livros");
+    }
+
+}

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Livros.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Theos.Componente.CrudDAO\Theos.Componente.CrudDAO.csproj" />
+    <ProjectReference Include="..\Theos.Model\Theos.Model.csproj" />
+  </ItemGroup>
+
+</Project>

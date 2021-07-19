@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.API", "Theos.API\Theos.API.csproj", "{091C655B-26B7-45F2-99AC-72963164B1E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Web", "Theos.Web\Theos.Web.csproj", "{F07D619C-CF01-42E4-9F6F-D97401FC2B84}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.BlazorApp", "Theos.BlazorApp\Theos.BlazorApp.csproj", "{9F151426-BA88-40A1-95B9-3C6C6978C088}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Theos.Componente.CrudDAO", "Theos.Componente.CrudDAO\Theos.Componente.CrudDAO.csproj", "{BEDDAB4B-A45F-4A9F-A1D7-B31D9F81B52F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Theos.Model", "Theos.Model\Theos.Model.csproj", "{218F3282-1C44-477B-BAFF-B6173E531697}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{091C655B-26B7-45F2-99AC-72963164B1E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{091C655B-26B7-45F2-99AC-72963164B1E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{091C655B-26B7-45F2-99AC-72963164B1E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{091C655B-26B7-45F2-99AC-72963164B1E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F07D619C-CF01-42E4-9F6F-D97401FC2B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F07D619C-CF01-42E4-9F6F-D97401FC2B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F07D619C-CF01-42E4-9F6F-D97401FC2B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F07D619C-CF01-42E4-9F6F-D97401FC2B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F151426-BA88-40A1-95B9-3C6C6978C088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F151426-BA88-40A1-95B9-3C6C6978C088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F151426-BA88-40A1-95B9-3C6C6978C088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F151426-BA88-40A1-95B9-3C6C6978C088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEDDAB4B-A45F-4A9F-A1D7-B31D9F81B52F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEDDAB4B-A45F-4A9F-A1D7-B31D9F81B52F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEDDAB4B-A45F-4A9F-A1D7-B31D9F81B52F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEDDAB4B-A45F-4A9F-A1D7-B31D9F81B52F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{218F3282-1C44-477B-BAFF-B6173E531697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218F3282-1C44-477B-BAFF-B6173E531697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218F3282-1C44-477B-BAFF-B6173E531697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218F3282-1C44-477B-BAFF-B6173E531697}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03ACDC18-D807-4794-B806-5A525719D3DE}
+	EndGlobalSection
+EndGlobal
