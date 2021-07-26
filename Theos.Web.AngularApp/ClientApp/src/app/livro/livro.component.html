@@ -1,0 +1,36 @@
+<div class="container">
+  <br />
+  <div class="row">
+    <div class="col">
+      <h3>Livroes</h3>
+    </div>
+    <div class="col text-right">
+      <a href="#" routerLink="/Livros/create/" class="btn btn-success btn-sm">Cadastrar novo</a>
+    </div>
+  </div>
+  <br />
+  <table class="table table-bordered table-sm">
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Valor</th>
+      <th>descricao</th>
+      <th>data</th>
+   
+      <th width="200px"></th>
+    </tr>
+    <tr *ngFor="let livro of lstLivros">
+      <td>{{ livro.id }}</td>
+      <td>{{ livro.nome }}</td>
+      <td>{{ livro.valor }}</td>
+      <td>{{ livro.descricao }}</td>
+      <td>{{ livro.data }}</td>
+    
+      <td class="text-right">
+        <a href="#" [routerLink]="['/Livroes/', livro.id, 'details']" class="btn btn-info btn-sm">View</a>
+        <a href="#" [routerLink]="['/Livroes/', livro.id, 'edit']" class="btn btn-primary btn-sm">Edit</a>
+        <button type="button" (click)="deletelivro(livro.id)" class="btn btn-danger btn-sm">Delete</button>
+      </td>
+    </tr>
+  </table>
+</div>

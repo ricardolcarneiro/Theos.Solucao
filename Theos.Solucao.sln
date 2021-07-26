@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.API", "Theos.API\Theo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.BlazorApp", "Theos.BlazorApp\Theos.BlazorApp.csproj", "{9F151426-BA88-40A1-95B9-3C6C6978C088}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Theos.Componente.CrudDAO", "Theos.Componente.CrudDAO\Theos.Componente.CrudDAO.csproj", "{BEDDAB4B-A45F-4A9F-A1D7-B31D9F81B52F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Componente.CrudDAO", "Theos.Componente.CrudDAO\Theos.Componente.CrudDAO.csproj", "{BEDDAB4B-A45F-4A9F-A1D7-B31D9F81B52F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Theos.Model", "Theos.Model\Theos.Model.csproj", "{218F3282-1C44-477B-BAFF-B6173E531697}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theos.Model", "Theos.Model\Theos.Model.csproj", "{218F3282-1C44-477B-BAFF-B6173E531697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Theos.Web.AngularApp", "Theos.Web.AngularApp\Theos.Web.AngularApp.csproj", "{5D4047C3-619B-4700-B50D-7B05B099746F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{218F3282-1C44-477B-BAFF-B6173E531697}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{218F3282-1C44-477B-BAFF-B6173E531697}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{218F3282-1C44-477B-BAFF-B6173E531697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D4047C3-619B-4700-B50D-7B05B099746F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D4047C3-619B-4700-B50D-7B05B099746F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D4047C3-619B-4700-B50D-7B05B099746F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D4047C3-619B-4700-B50D-7B05B099746F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

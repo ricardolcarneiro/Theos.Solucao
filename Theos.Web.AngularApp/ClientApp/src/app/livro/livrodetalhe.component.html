@@ -1,0 +1,25 @@
+<div class="container">
+  <br />
+  <h3>livro detalhes</h3>
+  <br />
+  <div class="card">
+    <div class="card-header">
+      <div class="row">
+        <div class="col">
+          <h4>{{ livro.nome }}</h4>
+        </div>
+        <div class="col text-right">
+          <a href="#" routerLink="/livros/list" class="btn btn-secondary btn-sm">Back To livros List</a>
+        </div>
+      </div>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><b>Id:</b> {{ livro.id }}</li>
+
+      <li class="list-group-item"><b>Nome:</b> {{ livro.nome }}</li>
+      <li class="list-group-item"><b>Calor:</b> {{ livro.valor }}</li>
+      <li class="list-group-item"><b>Descrição:</b> {{ livro.descricao }}</li>
+      <li class="list-group-item"><b>Data:</b> {{ livro.data }}</li>
+    </ul>
+  </div>
+</div>

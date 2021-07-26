@@ -19,7 +19,7 @@ namespace Theos.API.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Theos.API.Models.Livro", b =>
+            modelBuilder.Entity("Theos.Models.Livro", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

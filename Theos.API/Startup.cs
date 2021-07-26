@@ -64,7 +64,7 @@ namespace Theos.API
             }
 
             app.UseRouting();
-
+            app.UseCors(option => option.AllowAnyOrigin()); ;
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
